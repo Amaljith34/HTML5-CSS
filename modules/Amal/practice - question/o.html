@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn(arr){
+            return arr.sort((a,b)=>a.length-b.length)
+        }
+        console.log(fn(["abfd",'fgdfbcdcd',"fbfbf","dfsfddggdg","ggf"]))
+    </script>
+</body>
+</html>
+</html>
+
+
+
+
+<!-- 
+function sortByLength(arr) {
+    // Bubble sort algorithm
+    for (let i = 0; i < arr.length - 1; i++) {
+        for (let j = 0; j < arr.length - i - 1; j++) {
+            if (arr[j].length > arr[j + 1].length) {
+                // Swap elements
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+
+    return arr;
+} -->

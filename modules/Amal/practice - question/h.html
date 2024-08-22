@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn(ob){
+            let marks=ob.mark;
+            const avg=marks.reduce((a,b)=>a+b)
+            const re=avg/marks.length
+            return re
+        }
+        console.log(fn({ name: "Kevin", mark: [50, 45, 40, 40, 25] })); // ➞ 40
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn(avg){
+            const marks = avg.mark;
+            const result=marks.reduce((sum,mark)=>sum+mark,0)
+            const avarage=result/marks.length;
+            return avarage;
+        }
+
+
+// Examples
+console.log(fn({ name: "Kevin", mark: [50, 45, 40, 40, 25] })); // ➞ 40
+
+    </script>
+</body>
+</html> -->

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn(arr){
+            let le=''
+            let arr1
+            for(x of arr){
+                   if(x.length>le.length){
+                    le=x
+
+                   }
+                   arr1.push(x)
+            }
+            return le
+            
+        }
+        console.log(fn(["a","ccc", "dddd", "bb"]))
+    </script>
+</body>
+</html>

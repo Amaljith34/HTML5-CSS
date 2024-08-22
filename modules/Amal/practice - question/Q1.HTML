@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn(str){
+            let sp=str.split(" ")
+            let ne='';
+            for(i=sp.length-1;i>=0;i--){
+                    ne+=" "+sp[i]
+            }
+            return ne
+        }
+        console.log(fn('we are bridgeon'))
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn(obj) {
+    return Object.values(obj).join(' ');
+}
+
+// Test cases
+console.log(fn({ 1: "Mommy", 2: "please", 3: "help" })); // "Mommy please help"
+console.log(fn({ 1: "I", 2: "am", 3: "innocent" })); // "I am innocent"
+console.log(fn({ 1: "Lawyer", 2: "must", 3: "call" })); // "Lawyer must call"
+
+    </script>
+</body>
+</html>

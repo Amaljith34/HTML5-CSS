@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn(arr){
+        //   return arr.filter(a=> typeof a==='string')
+        let arr1=[]
+        for(i=0;i<=arr.length-1;i++){
+            if(typeof arr[i]==='string'){
+                arr1.push(arr[i])
+            }
+        }
+        return arr1
+        }
+        console.log(fn(["10",false,6,"Ten"]))
+    </script>
+</body>
+</html>

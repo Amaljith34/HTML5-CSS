@@ -1,0 +1,48 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn(arr){
+            let total=arr.reduce((a,b,c)=>a+b+c);
+            if(total %2!=0){
+                console.log("odd")
+            }
+            else{
+                console.log("even")
+            }
+        }
+        console.log(fn([4,2,3]))
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn(arr) {
+            // Correcting the reduce function to sum the elements properly
+            let total = arr.reduce((a, b) => a + b, 0);
+            // Checking if the total is odd or even
+            if (total % 2 == 0) {
+                return "even";
+            } else {
+                return "odd";
+            }
+        }
+        // Correctly logging the output of the fn function
+        console.log(fn([0, 5, 45])); // Should print "odd"
+    </script>
+</body>
+</html>

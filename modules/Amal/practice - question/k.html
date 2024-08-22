@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn(obj){
+            let sel=obj.map(ob=>ob.salary)
+            let tot=sel.reduce((a,b)=>a-b,0);
+            return tot;
+        }
+        console.log(fn([
+{ name: "John", salary: 23000 },
+{ name: "Steve", salary: 40000 },
+{ name: "Martin", salary: 15000 }]))
+    </script>
+</body>
+</html>

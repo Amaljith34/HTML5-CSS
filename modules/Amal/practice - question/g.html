@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn(obj){
+            let ages=obj.map(b=>b.age);
+             const la=Math.max(...ages)
+             const lo=Math.min(...ages)
+             const avg=la-lo;
+             return [la,lo,avg];
+        }
+        console.log(fn([
+  { name: "John", age: 15 },
+  { name: "Steve", age: 50 }]))
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn(obj){
+            const ages = obj.map(b => b.age);
+            const la=Math.max(...ages);
+            const lo=Math.min(...ages);
+            const di=la-lo;
+            return[la,lo,di];
+        }
+        console.log(fn([
+  { name: "John", age: 15 },
+  { name: "Steve", age: 50 }]));
+    </script>
+</body>
+</html> -->

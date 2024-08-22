@@ -1,0 +1,60 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Scrambled(s) {
+    let lowerCaseLetters = [];
+    let upperCaseLetters = [];
+
+    for (let char of s) {
+        if (char === char.toLowerCase()) {
+            lowerCaseLetters.push(char);
+        } else if (char === char.toUpperCase() ) {
+            upperCaseLetters.push(char);
+        }
+    }
+
+    return [lowerCaseLetters.join(''), upperCaseLetters.join('')];
+}
+
+// Test cases
+console.log(Scrambled("bridGneON")); // ["brid", "GEON"]
+console.log(Scrambled("MICROsoft")); // ["soft", "MICRO"]
+console.log(Scrambled("FacEBoOK")); // ["aco", "FEBOK"]
+
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn(arr){
+            let upp=[]
+            let low=[]
+            for(x of arr){
+                if(x===x.toLowerCase()){
+                    low.push(x)
+                }
+                else if(x===x.toUpperCase()){
+                    upp.push(x)
+                }
+            }
+            return [low.join(''),upp.join('')]
+        }
+        console.log(fn('bridGneON'))
+    </script> 
+</body>
+</html>

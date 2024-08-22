@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn(arr){
+            let large=''
+            for(x of arr){
+                if(x.length>large.length){
+                    large=x;
+                }
+            }
+            return large
+        }
+        console.log(fn( ['apple', 'banana', 'cherry', 'blueberry']))
+    </script>
+</body>
+</html>

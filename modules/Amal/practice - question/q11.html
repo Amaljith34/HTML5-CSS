@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn(arr){
+            let sum=0;
+            let x;
+            for(i=0;i<=arr.length-1;i++){
+                if(arr[i]<0){
+                    arr[i]*=(-1);
+                    sum+=arr[i]
+                }
+                else{
+                    sum+=arr[i]
+                }
+            }
+            return sum
+        }
+        console.log(fn([2, -1, 4, 8, 10]))
+    </script>
+</body>
+</html>

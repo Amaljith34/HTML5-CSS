@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn(arr){
+            let sum=0;
+            for(x of arr){
+                if(x=='++x'||x=='x++'){
+                    sum+=1;
+                }
+                else if(x=='--x'||x=='x--'){
+                    sum-=1;
+                }
+            }
+            return sum
+        }
+        console.log(fn(["++x","++x","x++"]))
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        val=0;
+        function xx(arr){
+            
+            for(y of arr){
+                if(y==='++x'||y==='x++'){
+                    val+=1
+                }
+                else if(y==='--x'||y==='x--'){
+                    val-=1
+                }
+            }
+            return val
+        }
+        console.log(xx(["++x","++x","x++"]))
+    </script>
+</body>
+</html> -->

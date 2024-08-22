@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn(str){
+            let sum=0;
+            for(x of str){
+                if(x=='i'){
+                    sum+=1;
+                }
+                else if(x=='d'){
+                    sum-=1;
+                }
+                else if(x=='s'){
+                    sum*=sum;
+                }
+            }
+            return sum
+        }
+        console.log(fn('dsdi'))
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn(abs){
+            let sum=0;
+            for(let x of abs){
+                if(x=='i'){
+                    sum+=1;
+                }
+                else if(x=='d'){
+                    sum-=1;
+                }
+                else if(x=='s'){
+                    sum*=sum;
+                }
+            }
+            return sum;
+        }
+        console.log(fn('iiiaaids'))
+    </script>
+</body>
+</html> -->
